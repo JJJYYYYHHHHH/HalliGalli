@@ -1,1 +1,2 @@
-# HalliGalli
+# HalliGalli Game
+Java
