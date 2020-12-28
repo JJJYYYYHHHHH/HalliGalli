@@ -17,12 +17,14 @@ Socket API를 이용한 GUI환경의 할리갈리 게임입니다.
 
 ### 주요 변수 및 함수
 ------------
+- 변수
 int[] CardNum - 게임에 필요한 56장의 카드를 담습니다.<br>
 Vector[] PlayCard - 플레이어별 보유 카드입니다. 동적으로 사용하기위해 Vector클래스를 사용했습니다.<br>
 Vector TableCard - 테이블에 깔려있는 카드입니다.<br>
 Vector OpenCard - 뒤집혀 있는 카드로 종을 쳤을 때 검사대상 카드입니다.<br>
 int NowPlayer - 순서를 제어해줍니다.<br><br><br>
 
+- 함수
 setCard() - 과일카드 56장의 객체를 생성해주고, 랜덤 정렬 알고리즘으로 카드를 섞습니다.<br>
 divideCard() - 플레이어에게 카드를 분배합니다.<br>
 nextPlayer() - 플레이어들의 게임 순서를 제어합니다.
