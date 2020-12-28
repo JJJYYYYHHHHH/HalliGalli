@@ -17,9 +17,15 @@ Socket API를 이용한 GUI환경의 할리갈리 게임입니다.
 
 ### 주요 변수 및 함수
 ------------
-int[] CardNum - 게임에 필요한 56장의 카드를 담습니다.
-Vector[] PlayCard - 플레이어별 보유 카드입니다. 동적으로 사용하기위해 Vector클래스를 사용했습니다.
-Vector TableCard - 테이블에 깔려있는 카드입니다.
-Vector TpenCard - 뒤집혀 있는 카드로 종을 쳤을 때 검사대상 카드입니다.
-int NowPlayer - 순서를 제어해줍니다.
+int[] CardNum - 게임에 필요한 56장의 카드를 담습니다.<br>
+Vector[] PlayCard - 플레이어별 보유 카드입니다. 동적으로 사용하기위해 Vector클래스를 사용했습니다.<br>
+Vector TableCard - 테이블에 깔려있는 카드입니다.<br>
+Vector OpenCard - 뒤집혀 있는 카드로 종을 쳤을 때 검사대상 카드입니다.<br>
+int NowPlayer - 순서를 제어해줍니다.<br><br><br>
 
+setCard() - 과일카드 56장의 객체를 생성해주고, 랜덤 정렬 알고리즘으로 카드를 섞습니다.<br>
+divideCard() - 플레이어에게 카드를 분배합니다.<br>
+nextPlayer() - 플레이어들의 게임 순서를 제어합니다.
+flipCard() - 카드를 뒤집고, 플레이어 카드의 숫자에 따라 이미지 표시 후 테이블(TableCard)에 카드를 놓고, 검사대상카드(OpenCard)를 최신화합니다.<br>
+bellPressCheck() - 플레이어가 벨을 눌렀을 때 호출됩니다. 검사대상 카드를 확인하고 득실처리를 합니다.<br>
+dieCheck() - 플레이어의 사망 여부와, 게임 종료 여부를 체크합니다.
